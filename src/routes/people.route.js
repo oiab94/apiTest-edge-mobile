@@ -1,7 +1,8 @@
 const { Router } = require("express");
 const { 
 	getAllPeople, 
-	getPeopleById } = require("../controllers/people.controller");
+	getPeopleById,
+	getCharacterBySearch } = require("../controllers/people.controller");
 
 // * Variables
 const router = Router();
@@ -9,5 +10,6 @@ const router = Router();
 // * Direccionamiento
 router.get("/api/people", getAllPeople);
 router.get("/api/people/:id", getPeopleById);
+router.get("/api/peopleSearch/", getCharacterBySearch);
 
 module.exports = router;
