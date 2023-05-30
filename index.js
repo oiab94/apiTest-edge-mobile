@@ -20,3 +20,6 @@ app.use(peopleRoute);
 
 // * Manejo de rutas no encontradas
 app.use(pathNotFound);
+
+// * Exportamos la app para realizar los test
+module.exports = app;
