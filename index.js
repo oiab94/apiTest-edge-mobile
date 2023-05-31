@@ -6,12 +6,10 @@ const peopleRoute = require("./src/routes/people.route");
 
 // * Inicia express
 const app = express();
-app.listen(
-	process.env.PORT,
-	() => {
-		console.log(`[Express] Iniciado en el puerto ${process.env.PORT}`);
-	}
-);
+const PORT = process.env.PORT;
+app.listen(PORT, () => {
+	console.log(`[Express] Iniciado en el puerto ${PORT}`);
+});
 
 // * Rutas de la API
 // Test de API
