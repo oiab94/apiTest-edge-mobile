@@ -38,4 +38,22 @@ describe("Prueba sobre la API", () => {
 			expect(response.status).toBe(400);
 		})
 	})
+
+	describe("GET /api/peopleSearch/?search=as", () => {
+		it("Encuentra la palabra indicada, retorna status 200 y el objeto", async () => {
+			let search = "as";
+			response = await request(app).get(`/api/people/?search=${search}`);
+			
+			expect(response.status).toBe(200);
+		});
+
+		it("Si la palabra no se encuentra debe retornar un array vacio", async () => {
+			let search = "asdf";
+			response = await request(app).get(`/api/people/?search=asdf`);
+		
+			console.log(response.body);
+			expect(response.body.results).toBeInstanceOf(Array);
+		})
+
+	});
 });
