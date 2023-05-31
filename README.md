@@ -21,12 +21,12 @@ git clone https://github.com/oiab94/apiTest-edge-mobile.git
 ```bash 
 npm install
 ```
-1. Despues de instalar todas las dependencias podemos ejecutar la app con el sgte 
+4. Despues de instalar todas las dependencias podemos ejecutar la app con el sgte 
 comando
 ```bash
 npm start
 ```
-4. Si nos vamos a la dirección: http://localhost:3000/ nos debería de indicar que
+5. Si nos vamos a la dirección: http://localhost:3000/ nos debería de indicar que
 la API se encuetra corriendo
 
 ## Uso
