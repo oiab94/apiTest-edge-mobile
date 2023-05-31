@@ -22,6 +22,24 @@ const router = Router();
  *         description: Bad Request
  */
 router.get("/api/people", getAllPeople);
+
+/**
+ * @swagger
+ * /api/people/{id}:
+ *  get:
+ *     summary: Return a object with the same ID
+ *     description: Get one character from Star Wars
+ *     parameters:
+ *       - name: id
+ *         description: Parameter must be a number
+ *         in: path
+ *         required: true
+ *     responses:
+ *      200:
+ *         description: OK
+ *      400:
+ *         description: Bad Request
+ */
 router.get("/api/people/:id", getPeopleById);
 router.get("/api/peopleSearch/", getCharacterBySearch);
 
