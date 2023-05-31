@@ -3,6 +3,7 @@ const express = require("express");
 const apiTestRoute = require("./src/routes/apiTest.route");
 const pathNotFound = require("./src/middleware/pathNotFound.middleware");
 const peopleRoute = require("./src/routes/people.route");
+const { swaggerDocs } = require("./swagger");
 
 // * Inicia express
 const app = express();
@@ -15,6 +16,9 @@ app.listen(PORT, () => {
 // Test de API
 app.use("/", apiTestRoute);
 app.use(peopleRoute);
+
+// Docs API
+swaggerDocs(app, PORT);
 
 // * Manejo de rutas no encontradas
 app.use(pathNotFound);
