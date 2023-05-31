@@ -41,6 +41,24 @@ router.get("/api/people", getAllPeople);
  *         description: Bad Request
  */
 router.get("/api/people/:id", getPeopleById);
+
+/**
+ * @swagger
+ * /api/peopleSearch/?search={name}:
+ *  get:
+ *     summary: Find a character with the same name
+ *     description: Get one character with the name from Star Wars
+ *     parameters:
+ *       - name: name
+ *         description: Parameter must be a string (Luke, Leia, etc). 
+ *         in: path
+ *         required: true
+ *     responses:
+ *      200:
+ *         description: OK
+ *      400:
+ *         description: Bad Request
+ */
 router.get("/api/peopleSearch/", getCharacterBySearch);
 
 module.exports = router;
