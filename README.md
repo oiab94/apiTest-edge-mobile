@@ -14,9 +14,9 @@ Star Wars API.
 
 1. Clona este repositorio
 ```git
-git clone https://github.com/oiab94/apiTest-edge-mobile.git
+https://github.com/oiab94/projects-apiTest.git
 ```
-2. Navega hasta la carpeta del proyecto: `cd apiTest-edge-mobile`
+2. Navega hasta la carpeta del proyecto: `cd projects-apiTest`
 3. Ejecuta el siguiente comando para instalar las dependencias
 ```bash 
 npm install
