@@ -41,3 +41,8 @@ El fichero
 de consumir nuestra API.<br> 
 El fichero [SWAPI](https://swapi.dev/) tiene la forma de consumir la api 
 <b>The Star Wars API</b>. 
+
+## Demo
+
+
+![apiTest](https://github.com/oiab94/projects-apiTest/assets/31137965/e19b6acc-1e26-47cd-aed0-2395fec54644)
